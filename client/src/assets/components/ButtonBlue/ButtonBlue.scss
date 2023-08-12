@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+
+button.button-blue {
+  background-color: $blue;
+  padding: 16px 50px;
+  @media (hover: hover) {
+    &:hover {
+      color: $white;
+      background-color: $violet;
+    }
+  }
+
+  &:focus {
+    border: 1px solid $violet;
+    color: $black;
+    background-color: $blue;
+  }
+
+  &:active {
+    color: $white;
+    background-color: $violet;
+    box-shadow: 0 0 10px 0 $shadow inset;
+  }
+
+  &:disabled, &[disabled] {
+    background-color: transparent;
+    color: $disabled;
+    border: 1px solid $disabled;
+  }
+}

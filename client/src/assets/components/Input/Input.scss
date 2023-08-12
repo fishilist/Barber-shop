@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.input-field {
+  &.disabled .input-field__title {
+    color: $disabledInput;
+  }
+}
+
+.input-field__title {
+  margin-bottom: 5px;
+}
+
+.input-field__input {
+}
+
+.input-field__input_input {
+  color: $disabled;
+  padding: 20px;
+  border: 1px solid $disabled;
+
+  &.error,
+  &:invalid {
+    color: $error;
+    border: 1px solid $error;
+  }
+
+  &:disabled, &[disabled] {
+    color: $disabledInput;
+    border: 1px solid $disabledInput;
+  }
+
+  &:focus {
+    color: #fff;
+    border: 1px solid $white;
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+      color: $white;
+    }
+
+    &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: $white;
+    }
+
+    &::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: $white;
+    }
+
+    &:-ms-input-placeholder { /* Internet Explorer 10+ */
+      color: $white;
+    }
+  }
+
+  &::-webkit-input-placeholder { /* WebKit browsers */
+    color: $disabled;
+  }
+
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $disabled;
+  }
+
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $disabled;
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: $disabled;
+  }
+}
+
+
+
+
+
+
+
+
